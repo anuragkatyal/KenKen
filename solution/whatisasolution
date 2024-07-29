@@ -1,3 +1,20 @@
+ <!DOCTYPE html>
+ <html> 
+      <script type="module" src="https://dev.doenet.org/cdn/doenet-standalone.js"> </script>
+     <link rel="stylesheet" href="https://dev.doenet.org/cdn/style.css">
+ <body onload="onPageLoad()">
+  
+ <script>
+ function onPageLoad() {
+   window.renderDoenetToContainer(document.querySelector(".doenetml-applet"));
+ }
+ </script>
+ 
+  <div class="doenetml-applet">
+      <script type="text/doenetml">
+
+
+
 <!-- **********************************************************************
 
 Course:    Intermediate Algebra/Algebra I
@@ -313,5 +330,7 @@ Q - How do I make this question a self check but not worth any credit? Use the w
 
 </section>    
 
-      
+</script>
+</div>
+</body>
 
