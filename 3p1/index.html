@@ -1,18 +1,26 @@
-
- <!DOCTYPE html>
- <html> 
-      <script type="module" src="https://dev.doenet.org/cdn/doenet-standalone.js"> </script>
-     <link rel="stylesheet" href="https://dev.doenet.org/cdn/style.css">
- <body onload="onPageLoad()">
-  
- <script>
- function onPageLoad() {
-   window.renderDoenetToContainer(document.querySelector(".doenetml-applet"));
- }
- </script>
- 
-  <div class="doenetml-applet">
-      <script type="text/doenetml">
+<!doctype html>
+<html>
+    <script
+        type="module"
+        src="https://cdn.jsdelivr.net/npm/@doenet/standalone@0.7.0-alpha51/doenet-standalone.js"
+    ></script>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@doenet/standalone@0.7.0-alpha51/style.css"
+    />
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document
+                .querySelectorAll(".doenetml-viewer")
+                .forEach((container) => {
+                    renderDoenetViewerToContainer(container);
+                });
+        });
+    </script>
+    <body>
+ <div style="display: flex; justify-content: center;"> 
+         <div class="doenetml-viewer" style="width: 850px">
+              <script type="text/doenetml">
 
 
 <activity><title>KenKen Puzzle (3x3) #1</title>
@@ -67,9 +75,8 @@
 </activity>
 
 
-
-
- </script>
-  </div>
- 
- </body>
+    	</script>
+            </div>
+	</div>
+    </body>
+</html>
